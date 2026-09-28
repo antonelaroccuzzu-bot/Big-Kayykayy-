@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Big Kayykayy</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #0b0f14;
+      color: white;
+      min-height: 100vh;
+    }
+
+    header {
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #222831;
+    }
+
+    .logo {
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+    .wallet {
+      background: #171d26;
+      padding: 10px 15px;
+      border-radius: 12px;
+      font-weight: bold;
+    }
+
+    .hero {
+      padding: 40px 20px 25px;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 34px;
+      margin-bottom: 12px;
+    }
+
+    .hero p {
+      color: #aeb6c2;
+      font-size: 16px;
+      line-height: 1.5;
+    }
+
+    .services {
+      padding: 20px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 15px;
+    }
+
+    .service {
+      background: #151b24;
+      border: 1px solid #252d38;
+      border-radius: 18px;
+      padding: 22px 15px;
+      text-align: center;
+      cursor: pointer;
+    }
+
+    .service:hover {
+      background: #1d2530;
+    }
+
+    .icon {
+      font-size: 30px;
+      margin-bottom: 10px;
+    }
+
+    .service h3 {
+      margin-bottom: 6px;
+    }
+
+    .service p {
+      color: #8f99a7;
+      font-size: 13px;
+    }
+
+    .section {
+      margin: 10px 20px;
+      padding: 20px;
+      background: #151b24;
+      border-radius: 18px;
+    }
+
+    .section h2 {
+      margin-bottom: 10px;
+    }
+
+    .section p {
+      color: #aeb6c2;
+      line-height: 1.5;
+    }
+
+    .ad {
+      margin: 20px;
+      height: 100px;
+      border: 1px dashed #454e5b;
+      border-radius: 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #727c89;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      color: #727c89;
+      font-size: 13px;
+    }
+
+    button {
+      margin-top: 15px;
+      padding: 13px 22px;
+      border: none;
+      border-radius: 12px;
+      background: #ffffff;
+      color: #000000;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    @media (min-width: 700px) {
+      .services {
+        grid-template-columns: repeat(4, 1fr);
+      }
+
+      .hero h1 {
+        font-size: 48px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">BIG KAYYKAYY</div>
+    <div class="wallet">₦0.00</div>
+  </header>
+
+  <section class="hero">
+    <h1>Everything You Need</h1>
+    <p>
+      Buy airtime, data, electricity and ePINs
+      easily from Big Kayykayy.
+    </p>
+    <button onclick="start()">Get Started</button>
+  </section>
+
+  <section class="services">
+
+    <div class="service" onclick="buy('Airtime')">
+      <div class="icon">📱</div>
+      <h3>Airtime</h3>
+      <p>Recharge your line</p>
+    </div>
+
+    <div class="service" onclick="buy('Data')">
+      <div class="icon">🌐</div>
+      <h3>Data</h3>
+      <p>Buy internet data</p>
+    </div>
+
+    <div class="service" onclick="buy('Electricity')">
+      <div class="icon">💡</div>
+      <h3>Electricity</h3>
+      <p>Pay your light bill</p>
+    </div>
+
+    <div class="service" onclick="buy('ePIN')">
+      <div class="icon">🎟️</div>
+      <h3>ePIN</h3>
+      <p>Buy digital PINs</p>
+    </div>
+
+  </section>
+
+  <div class="section">
+    <h2>Big Kayykayy</h2>
+    <p>
+      Your trusted digital services platform.
+      Real airtime, data, electricity and ePIN
+      services will be connected through a secure
+      payment system and VTU API.
+    </p>
+  </div>
+
+  <div class="ad">
+    Advertisement Space
+  </div>
+
+  <footer>
+    © 2026 Big Kayykayy. All rights reserved.
+  </footer>
+
+  <script>
+    function start() {
+      alert("Welcome to Big Kayykayy!");
+    }
+
+    function buy(service) {
+      alert(service + " service selected. Payment and VTU connection will be added next.");
+    }
+  </script>
+
+</body>
+</html>
